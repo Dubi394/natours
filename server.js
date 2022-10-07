@@ -4,12 +4,12 @@ const app = require('./app');
 
 dotenv.config({ path: './config.env' });
 
-// const DB = process.env.DATABASE.replace(
-//   '<PASSWORD>',
-//   process.env.DATABASE_PASSWORD
-// );
-const DB =
-  'mongodb+srv://adam394:Dd9915205@cluster0.6slo2jo.mongodb.net/natours?retryWrites=true&w=majority';
+const DB = process.env.DATABASE.replace(
+  '<PASSWORD>',
+  process.env.DATABASE_PASSWORD
+);
+// const DB =
+//   'mongodb+srv://adam394:Dd9915205@cluster0.6slo2jo.mongodb.net/natours?retryWrites=true&w=majority';
 
 //Local :
 // mongoose.connect(process.env.DATABASE_LOCAL)
